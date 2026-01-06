@@ -28,7 +28,7 @@
   <p>Teknoloji, tasarım ve stratejiyi harmanlayan bir <b>'İsviçre Çakısı'</b>yım. Denizcilik otomasyonundan kurumsal perakendeye uzanan deneyimimi modern dijital çözümlerle birleştiriyorum.</p>
   
   <ul>
-    <li><b>UI/UX Tasarımı:</b> Apple standartlarında minimalist, yüksek kaliteli ve işlevsel arayüzler.</li>
+    <li><b>UI/UX Tasarımı:</b>  Minimalist, yüksek kaliteli ve işlevsel arayüzler.</li>
     <li><b>Web Teknolojileri:</b> React, WordPress ve modern web standartları üzerine kurulu geliştirme süreçleri.</li>
     <li><b>Yaratıcı Strateji:</b> Video kurgu (AE, Premiere, FCP) ve performans odaklı dijital pazarlama uzmanlığı.</li>
   </ul>
