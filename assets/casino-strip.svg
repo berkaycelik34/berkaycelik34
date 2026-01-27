@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="140" viewBox="0 0 1200 140">
+  <defs>
+    <linearGradient id="g" x1="0" x2="1">
+      <stop offset="0" stop-color="#22d3ee"/>
+      <stop offset="0.5" stop-color="#a78bfa"/>
+      <stop offset="1" stop-color="#fb7185"/>
+    </linearGradient>
+
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="b"/>
+      <feMerge>
+        <feMergeNode in="b"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <style>
+      .bg { fill: #0b0f14; }
+      .stroke { stroke: url(#g); stroke-width: 2; fill: none; opacity: .9; }
+      .txt { fill: #e5e7eb; font-family: Inter, system-ui, -apple-system, Segoe UI, Arial; font-size: 18px; opacity: .92; }
+      .muted { opacity: .65; font-size: 14px; }
+      .glow { filter: url(#glow); }
+
+      /* rulet dönüş */
+      @keyframes spin { to { transform: rotate(360deg); } }
+      .wheel { transform-origin: 96px 70px; animation: spin 2.6s linear infinite; }
+
+      /* kayan ikon şeridi */
+      @keyframes slide { from { transform: translateX(0); } to { transform: translateX(-420px); } }
+      .strip { animation: slide 6s linear infinite; }
+    </style>
+  </defs>
+
+  <rect class="bg" x="0" y="0" width="1200" height="140" rx="22"/>
+  <rect class="stroke glow" x="18" y="18" width="1164" height="104" rx="18"/>
+
+  <!-- Rulet -->
+  <g class="wheel glow">
+    <circle cx="96" cy="70" r="34" fill="none" stroke="url(#g)" stroke-width="3"/>
+    <circle cx="96" cy="70" r="24" fill="none" stroke="#9ca3af" stroke-opacity=".35" stroke-width="2"/>
+    <path d="M96 36 L102 56 L96 70 L90 56 Z" fill="#e5e7eb" opacity=".9"/>
+    <path d="M96 104 L102 84 L96 70 L90 84 Z" fill="#e5e7eb" opacity=".6"/>
+    <path d="M62 70 L82 76 L96 70 L82 64 Z" fill="#e5e7eb" opacity=".75"/>
+    <path d="M130 70 L110 76 L96 70 L110 64 Z" fill="#e5e7eb" opacity=".45"/>
+    <circle cx="96" cy="70" r="4" fill="#e5e7eb"/>
+  </g>
+
+  <!-- Başlık -->
+  <text class="txt glow" x="165" y="62">Casino-grade motion, minimalist UI.</text>
+  <text class="txt muted" x="165" y="86">Precision • Probability • Performance</text>
+
+  <!-- Kayan ikon şeridi -->
+  <g transform="translate(720, 0)">
+    <clipPath id="clip">
+      <rect x="0" y="32" width="430" height="76" rx="14"/>
+    </clipPath>
+
+    <rect x="0" y="32" width="430" height="76" rx="14" fill="#0f1620" opacity=".9" stroke="#334155" stroke-opacity=".4"/>
+
+    <g clip-path="url(#clip)">
+      <g class="strip" transform="translate(0,0)">
+        <text x="18"  y="80" class="txt glow">🎰</text>
+        <text x="68"  y="80" class="txt glow">🎲</text>
+        <text x="118" y="80" class="txt glow">🃏</text>
+        <text x="168" y="80" class="txt glow">♠️</text>
+        <text x="218" y="80" class="txt glow">♥️</text>
+        <text x="268" y="80" class="txt glow">♣️</text>
+        <text x="318" y="80" class="txt glow">♦️</text>
+        <text x="368" y="80" class="txt glow">🎲</text>
+
+        <!-- loop tekrar -->
+        <text x="438" y="80" class="txt glow">🎰</text>
+        <text x="488" y="80" class="txt glow">🎲</text>
+        <text x="538" y="80" class="txt glow">🃏</text>
+        <text x="588" y="80" class="txt glow">♠️</text>
+        <text x="638" y="80" class="txt glow">♥️</text>
+        <text x="688" y="80" class="txt glow">♣️</text>
