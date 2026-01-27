@@ -86,6 +86,38 @@ En güçlü projelerim, profilimde sabitlenmiş (Pinned) repo’lar üzerinden s
 
 ---
 
+---
+
+<p align="center">
+  <img
+    src="https://capsule-render.vercel.app/api?type=rect&color=gradient&height=2"
+    width="60%"
+    alt=""
+  />
+</p>
+
+<h2 align="center">İletişim</h2>
+
+<p align="center">
+  <a href="https://celikberkay.com">celikberkay.com</a>
+  &nbsp;·&nbsp;
+  <a href="mailto:infogit@celikberkay.com">infogit@celikberkay.com</a>
+</p>
+
+<p align="center">
+  <img
+    src="https://capsule-render.vercel.app/api?type=rect&color=gradient&height=2"
+    width="60%"
+    alt=""
+  />
+</p>
+
+---
+
+
+
+
+
 <p align="center">
 ⌘ Status: <b>TR Mode Active</b>
 </p>
