@@ -1,0 +1,168 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="260" viewBox="0 0 920 260">
+  <defs>
+    <!-- Premium gradient -->
+    <linearGradient id="grad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#2f8f9d"/>
+      <stop offset="0.5" stop-color="#7a5ea6"/>
+      <stop offset="1" stop-color="#b07a3f"/>
+      <animate attributeName="x1" values="-1;1" dur="6s" repeatCount="indefinite"/>
+      <animate attributeName="x2" values="0;2" dur="6s" repeatCount="indefinite"/>
+    </linearGradient>
+
+    <style>
+      .bg { fill: rgba(255,255,255,0.02); stroke: rgba(255,255,255,0.06); }
+      .title { font: 700 18px system-ui, -apple-system, Segoe UI, Roboto, Arial; fill: #eaeaea; }
+      .sub { font: 500 12px system-ui, -apple-system, Segoe UI, Roboto, Arial; fill: #9a9a9a; letter-spacing:.2px; }
+      .pill { fill: rgba(255,255,255,0.04); stroke: rgba(255,255,255,0.08); }
+      .pillText { font: 600 12px system-ui, -apple-system, Segoe UI, Roboto, Arial; fill: #cfcfcf; }
+      .rowLabel { font: 600 12px system-ui, -apple-system, Segoe UI, Roboto, Arial; fill: #bdbdbd; }
+      @media (prefers-color-scheme: light) {
+        .bg { fill: rgba(0,0,0,0.03); stroke: rgba(0,0,0,0.08); }
+        .title { fill: #111; }
+        .sub { fill: #666; }
+        .pill { fill: rgba(0,0,0,0.03); stroke: rgba(0,0,0,0.10); }
+        .pillText { fill: #333; }
+        .rowLabel { fill: #444; }
+      }
+    </style>
+
+    <clipPath id="clip">
+      <rect x="18" y="18" width="884" height="224" rx="18"/>
+    </clipPath>
+
+    <!-- subtle glow -->
+    <filter id="soft" x="-20%" y="-40%" width="140%" height="180%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="8" result="blur"/>
+      <feColorMatrix in="blur" type="matrix"
+        values="0 0 0 0 0
+                0 0 0 0 0
+                0 0 0 0 0
+                0 0 0 .22 0" result="shadow"/>
+      <feMerge>
+        <feMergeNode in="shadow"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- icon size -->
+    <g id="icon">
+      <rect width="34" height="34" rx="10" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)"/>
+    </g>
+  </defs>
+
+  <!-- Container -->
+  <rect class="bg" x="18" y="18" width="884" height="224" rx="18" filter="url(#soft)"/>
+  <rect x="18" y="18" width="884" height="3" rx="2" fill="url(#grad)" opacity="0.95"/>
+
+  <!-- Header -->
+  <text class="title" x="44" y="62">🛠️ Tech & Design Stack</text>
+  <text class="sub" x="44" y="84">Minimal tools. Maximum output. — curated for product, infrastructure, and creative workflows.</text>
+
+  <!-- Pills -->
+  <g transform="translate(44,104)">
+    <rect class="pill" x="0" y="0" width="140" height="30" rx="999"/>
+    <text class="pillText" x="18" y="20">Core</text>
+
+    <rect class="pill" x="152" y="0" width="180" height="30" rx="999"/>
+    <text class="pillText" x="170" y="20">Infrastructure</text>
+
+    <rect class="pill" x="344" y="0" width="160" height="30" rx="999"/>
+    <text class="pillText" x="362" y="20">Creative</text>
+  </g>
+
+  <!-- Animated rows area -->
+  <g clip-path="url(#clip)">
+    <!-- The “carousel” group slides vertically between rows -->
+    <g transform="translate(0,0)">
+      <animateTransform attributeName="transform" type="translate"
+        values="0 0; 0 -64; 0 -128; 0 -128; 0 -64; 0 0; 0 0"
+        keyTimes="0; 0.18; 0.36; 0.60; 0.78; 0.96; 1"
+        dur="10s" repeatCount="indefinite"/>
+
+      <!-- ROW 1: Core -->
+      <g transform="translate(44,150)">
+        <text class="rowLabel" x="0" y="-8">Core</text>
+
+        <!-- icon tiles -->
+        <g transform="translate(0,0)">
+          <use href="#icon"/>
+          <image href="https://cdn.simpleicons.org/react/BBBBBB/666666?viewbox=auto&amp;size=18" x="8" y="8" width="18" height="18"/>
+        </g>
+
+        <g transform="translate(56,0)">
+          <use href="#icon"/>
+          <image href="https://cdn.simpleicons.org/javascript/BBBBBB/666666?viewbox=auto&amp;size=18" x="8" y="8" width="18" height="18"/>
+        </g>
+
+        <g transform="translate(112,0)">
+          <use href="#icon"/>
+          <image href="https://cdn.simpleicons.org/medusa/BBBBBB/666666?viewbox=auto&amp;size=18" x="8" y="8" width="18" height="18"/>
+        </g>
+
+        <g transform="translate(168,0)">
+          <use href="#icon"/>
+          <image href="https://cdn.simpleicons.org/html5/BBBBBB/666666?viewbox=auto&amp;size=18" x="8" y="8" width="18" height="18"/>
+        </g>
+
+        <g transform="translate(224,0)">
+          <use href="#icon"/>
+          <image href="https://cdn.simpleicons.org/css3/BBBBBB/666666?viewbox=auto&amp;size=18" x="8" y="8" width="18" height="18"/>
+        </g>
+      </g>
+
+      <!-- ROW 2: Infrastructure -->
+      <g transform="translate(44,214)">
+        <text class="rowLabel" x="0" y="-8">Infrastructure</text>
+
+        <g transform="translate(0,0)">
+          <use href="#icon"/>
+          <image href="https://cdn.simpleicons.org/docker/BBBBBB/666666?viewbox=auto&amp;size=18" x="8" y="8" width="18" height="18"/>
+        </g>
+
+        <g transform="translate(56,0)">
+          <use href="#icon"/>
+          <image href="https://cdn.simpleicons.org/linux/BBBBBB/666666?viewbox=auto&amp;size=18" x="8" y="8" width="18" height="18"/>
+        </g>
+
+        <g transform="translate(112,0)">
+          <use href="#icon"/>
+          <image href="https://cdn.simpleicons.org/nginx/BBBBBB/666666?viewbox=auto&amp;size=18" x="8" y="8" width="18" height="18"/>
+        </g>
+
+        <g transform="translate(168,0)">
+          <use href="#icon"/>
+          <image href="https://avatars.githubusercontent.com/u/103913525?s=64&amp;v=4" x="8" y="8" width="18" height="18"/>
+        </g>
+      </g>
+
+      <!-- ROW 3: Creative -->
+      <g transform="translate(44,278)">
+        <text class="rowLabel" x="0" y="-8">Creative</text>
+
+        <g transform="translate(0,0)">
+          <use href="#icon"/>
+          <image href="https://cdn.simpleicons.org/figma/BBBBBB/666666?viewbox=auto&amp;size=18" x="8" y="8" width="18" height="18"/>
+        </g>
+
+        <g transform="translate(56,0)">
+          <use href="#icon"/>
+          <image href="https://cdn.simpleicons.org/adobephotoshop/BBBBBB/666666?viewbox=auto&amp;size=18" x="8" y="8" width="18" height="18"/>
+        </g>
+
+        <g transform="translate(112,0)">
+          <use href="#icon"/>
+          <image href="https://cdn.simpleicons.org/adobeaftereffects/BBBBBB/666666?viewbox=auto&amp;size=18" x="8" y="8" width="18" height="18"/>
+        </g>
+
+        <g transform="translate(168,0)">
+          <use href="#icon"/>
+          <image href="https://cdn.simpleicons.org/adobepremierepro/BBBBBB/666666?viewbox=auto&amp;size=18" x="8" y="8" width="18" height="18"/>
+        </g>
+      </g>
+
+    </g>
+  </g>
+
+  <!-- subtle bottom separator -->
+  <rect x="18" y="239" width="884" height="1" fill="rgba(255,255,255,0.06)"/>
+</svg>
