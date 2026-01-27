@@ -62,7 +62,7 @@ Denizcilik otomasyonundan kurumsal perakendeye uzanan deneyimimi modern dijital 
 
 
 <p align="center">
-  <img src="assets/stack-section.svg" alt="Tech &amp; Design Stack" />
+  <img src="stackssction.svg" alt="Tech &amp; Design Stack" />
 </p>
 
 
