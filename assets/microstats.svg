@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="74" viewBox="0 0 920 74">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#2f8f9d"/>
+      <stop offset="0.5" stop-color="#7a5ea6"/>
+      <stop offset="1" stop-color="#b07a3f"/>
+    </linearGradient>
+
+    <filter id="soft" x="-20%" y="-50%" width="140%" height="200%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="6" result="blur"/>
+      <feColorMatrix in="blur" type="matrix"
+        values="0 0 0 0 0
+                0 0 0 0 0
+                0 0 0 0 0
+                0 0 0 .20 0" result="shadow"/>
+      <feMerge>
+        <feMergeNode in="shadow"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <clipPath id="clip">
+      <rect x="16" y="12" width="888" height="50" rx="14"/>
+    </clipPath>
+
+    <style>
+      .bg { fill: rgba(255,255,255,0.02); stroke: rgba(255,255,255,0.06); }
+      .label { font: 600 12px system-ui, -apple-system, Segoe UI, Roboto, Arial; fill: #cfcfcf; letter-spacing: .2px; }
+      .sub { font: 500 11px system-ui, -apple-system, Segoe UI, Roboto, Arial; fill: #9a9a9a; }
+      @media (prefers-color-scheme: light) {
+        .bg { fill: rgba(0,0,0,0.03); stroke: rgba(0,0,0,0.08); }
+        .label { fill: #2b2b2b; }
+        .sub { fill: #666; }
+      }
+    </style>
+  </defs>
+
+  <!-- container -->
+  <rect class="bg" x="16" y="12" width="888" height="50" rx="14" filter="url(#soft)"/>
+  <!-- accent line -->
+  <rect x="16" y="12" width="888" height="2" rx="1" fill="url(#g)" opacity="0.9"/>
+
+  <!-- text -->
+  <text class="label" x="36" y="42">Micro stats</text>
+  <text class="sub" x="128" y="42">Views · Stars · Followers</text>
+
+  <!-- badges area -->
+  <g clip-path="url(#clip)">
+    <!-- right aligned group -->
+    <g transform="translate(420,23)">
+      <!-- NOTE: these are external SVGs. If GitHub blocks nested images for your profile,
+           use solution A (inline badges) instead. -->
+
+      <image href="https://komarev.com/ghpvc/?username=berkaycelik34&amp;label=Views&amp;style=flat&amp;color=1f2937&amp;labelColor=0b0f14"
+             x="180" y="0" width="160" height="28" />
+
+      <image href="https://img.shields.io/github/stars/berkaycelik34?label=Stars&amp;style=flat&amp;color=1f2937&amp;labelColor=0b0f14"
+             x="350" y="0" width="150" height="28" />
+
+      <image href="https://img.shields.io/github/followers/berkaycelik34?label=Followers&amp;style=flat&amp;color=1f2937&amp;labelColor=0b0f14"
+             x="510" y="0" width="180" height="28" />
+    </g>
+  </g>
+</svg>
