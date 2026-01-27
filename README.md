@@ -15,7 +15,6 @@
 
 ---
 
-<!-- ===================== CAREER ECOSYSTEM ===================== -->
 <h2 align="center">🧩 Kariyer Ekosistemi</h2>
 
 <p align="center" width="70%">
@@ -25,7 +24,6 @@ Denizcilik otomasyonundan kurumsal perakendeye uzanan deneyimimi modern dijital 
 
 ---
 
-<!-- ===================== FOCUS GRID ===================== -->
 <table align="center">
 <tr>
 <td width="33%" valign="top">
@@ -57,14 +55,13 @@ Denizcilik otomasyonundan kurumsal perakendeye uzanan deneyimimi modern dijital 
 
 ---
 
-<!-- ===================== TECH & DESIGN STACK (CUSTOM SVG) ===================== -->
+<!-- ===================== STACK SECTION ===================== -->
 <p align="center">
   <img src="./assets/stack-section.svg" alt="Tech & Design Stack" />
 </p>
 
 ---
 
-<!-- ===================== PRINCIPLES ===================== -->
 <h2 align="center">🧠 Çalışma Prensipleri</h2>
 
 <p align="center">
@@ -75,7 +72,6 @@ Estetik benim için süs değil, performans aracıdır.<br/>
 
 ---
 
-<!-- ===================== WORK ===================== -->
 <h2 align="center">📌 Seçili Çalışmalar</h2>
 
 <p align="center">
@@ -84,19 +80,16 @@ En güçlü projelerim, profilimde sabitlenmiş (Pinned) repo’lar üzerinden s
 
 ---
 
-<!-- ===================== STATUS ===================== -->
 <p align="center">
 ⌘ Status: <b>TR Mode Active</b>
 </p>
 
-<!-- ===================== MICRO STATS ===================== -->
 <p align="center">
-  <img src="https://komarev.com/ghpvc/?username=berkaycelik34&label=Views&style=flat&color=1f2937&labelColor=0b0f14" />
-  <img src="https://img.shields.io/github/stars/berkaycelik34?label=Stars&style=flat&color=1f2937&labelColor=0b0f14" />
-  <img src="https://img.shields.io/github/followers/berkaycelik34?label=Followers&style=flat&color=1f2937&labelColor=0b0f14" />
+  <img src="https://komarev.com/ghpvc/?username=berkaycelik34&label=Views&style=flat&color=1f2937&labelColor=0b0f14" alt="Views" />
+  <img src="https://img.shields.io/github/stars/berkaycelik34/berkaycelik34?label=Stars&style=flat&color=1f2937&labelColor=0b0f14" alt="Stars" />
+  <img src="https://img.shields.io/github/followers/berkaycelik34?label=Followers&style=flat&color=1f2937&labelColor=0b0f14" alt="Followers" />
 </p>
 
-<!-- ===================== FOOTER ===================== -->
 <p align="center">
   <img
     src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=110&section=footer"
