@@ -3,7 +3,7 @@
 </p>
 
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Inter&style=italic&weight=400&size=20&pause=2200&color=A9A9A9&center=true&vCenter=true&width=600&height=30&lines=The+Swiss+Army+Knife+of+Tech+%26+Design;Teknoloji+ve+Tasar%C4%B1m%C4%B0svi%C3%A7re+%C3%87ak%C4%B1s%C4%B1;Roulette+mindset%2C+pixel-precise+execution.;Risk+hesaplan%C4%B1r%2C+tasar%C4%B1m+kazand%C4%B1r%C4%B1r." />
+  <img src="https://readme-typing-svg.demolab.com?font=Inter&style=italic&weight=400&size=20&pause=2200&color=A9A9A9&center=true&vCenter=true&width=600&height=30&lines=The+Swiss+Army+Knife+of+Tech+%26+Design;Teknoloji+ve+Tasar%C4%B1m%C4%B0svi%C3%A7re+%C3%87ak%C4%B1s%C4%B1;Slot+mindset%2C+pixel-precise+execution.;Risk+hesaplan%C4%B1r%2C+tasar%C4%B1m+kazand%C4%B1r%C4%B1r." />
   <br/>
   <img src="https://readme-typing-svg.demolab.com?font=Inter&weight=500&size=22&pause=2600&color=F8F8F8&center=true&vCenter=true&width=600&height=40&lines=Loyalty+to+aesthetics%2C+driven+by+action.;Esteti%C4%9Fe+ba%C4%9Fl%C4%B1%2C+eylem+odakl%C4%B1.;Odds+favor+the+prepared." />
 </p>
@@ -13,7 +13,12 @@
   <span>🎰</span>&nbsp;&nbsp;<span>🎲</span>&nbsp;&nbsp;<span>🃏</span>&nbsp;&nbsp;<span>♠️</span>&nbsp;&nbsp;<span>♥️</span>&nbsp;&nbsp;<span>♣️</span>&nbsp;&nbsp;<span>♦️</span>
 </p>
 
-<!-- Animated casino strip (local SVG) -->
+<!-- SLOT MACHINE (local SVG) -->
+<p align="center">
+  <img src="assets/slot-machine.svg" alt="Slot Machine" width="820" />
+</p>
+
+<!-- Optional: casino strip (local SVG) -->
 <p align="center">
   <img src="assets/casino-strip.svg" alt="Casino Motion Strip" width="720" />
 </p>
