@@ -1,0 +1,142 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="180" viewBox="0 0 1200 180">
+  <defs>
+    <linearGradient id="g" x1="0" x2="1">
+      <stop offset="0" stop-color="#22d3ee"/>
+      <stop offset="0.5" stop-color="#a78bfa"/>
+      <stop offset="1" stop-color="#fb7185"/>
+    </linearGradient>
+
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="b"/>
+      <feMerge>
+        <feMergeNode in="b"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <linearGradient id="glass" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0" stop-color="#ffffff" stop-opacity=".10"/>
+      <stop offset=".5" stop-color="#ffffff" stop-opacity=".02"/>
+      <stop offset="1" stop-color="#000000" stop-opacity=".18"/>
+    </linearGradient>
+
+    <style>
+      .bg { fill:#0b0f14; }
+      .panel { fill:#0f1620; stroke:#334155; stroke-opacity:.45; }
+      .neon { fill:none; stroke:url(#g); stroke-width:2; opacity:.9; filter:url(#glow); }
+      .txt { fill:#e5e7eb; font-family: Inter, system-ui, -apple-system, Segoe UI, Arial; }
+      .small { font-size:14px; opacity:.7; }
+      .title { font-size:18px; opacity:.92; }
+      .icon { font-size:34px; filter:url(#glow); }
+
+      /* reel scroll */
+      @keyframes reel {
+        from { transform: translateY(0); }
+        to   { transform: translateY(-180px); } /* 5 symbols * 36px step */
+      }
+      .r1 { animation: reel 1.55s linear infinite; }
+      .r2 { animation: reel 1.85s linear infinite; }
+      .r3 { animation: reel 1.65s linear infinite; }
+
+      /* scanline glow */
+      @keyframes scan {
+        0% { transform: translateY(0); opacity:.0; }
+        15% { opacity:.35; }
+        50% { opacity:.25; }
+        85% { opacity:.35; }
+        100% { transform: translateY(62px); opacity:.0; }
+      }
+      .scan { animation: scan 2.2s ease-in-out infinite; }
+    </style>
+
+    <!-- clip for reels -->
+    <clipPath id="reelClip">
+      <rect x="560" y="54" width="330" height="72" rx="14"/>
+    </clipPath>
+  </defs>
+
+  <!-- outer card -->
+  <rect class="bg" x="0" y="0" width="1200" height="180" rx="26"/>
+  <rect class="neon" x="18" y="18" width="1164" height="144" rx="22"/>
+
+  <!-- left text -->
+  <text class="txt title" x="52" y="74">Slot-grade motion, minimal surface.</text>
+  <text class="txt small" x="52" y="98">Smooth loops • crisp UI • controlled noise</text>
+
+  <!-- slot body -->
+  <g>
+    <rect class="panel" x="520" y="40" width="410" height="100" rx="20"/>
+    <rect fill="url(#glass)" x="520" y="40" width="410" height="100" rx="20"/>
+
+    <!-- reels window -->
+    <rect x="560" y="54" width="330" height="72" rx="14" fill="#0b0f14" opacity=".95" stroke="#334155" stroke-opacity=".5"/>
+
+    <!-- reel separators -->
+    <line x1="670" y1="54" x2="670" y2="126" stroke="#334155" stroke-opacity=".55"/>
+    <line x1="780" y1="54" x2="780" y2="126" stroke="#334155" stroke-opacity=".55"/>
+
+    <!-- scanline -->
+    <rect class="scan" x="560" y="60" width="330" height="10" rx="6" fill="url(#g)" opacity=".0" filter="url(#glow)"/>
+
+    <!-- reels (clipped) -->
+    <g clip-path="url(#reelClip)">
+      <!-- REEL 1 -->
+      <g class="r1" transform="translate(0,0)">
+        <!-- sequence (repeat twice for seamless loop) -->
+        <text class="txt icon" x="605" y="88">🍒</text>
+        <text class="txt icon" x="605" y="124">🔔</text>
+        <text class="txt icon" x="605" y="160">🍋</text>
+        <text class="txt icon" x="605" y="196">💎</text>
+        <text class="txt icon" x="605" y="232">7️⃣</text>
+
+        <text class="txt icon" x="605" y="268">🍒</text>
+        <text class="txt icon" x="605" y="304">🔔</text>
+        <text class="txt icon" x="605" y="340">🍋</text>
+        <text class="txt icon" x="605" y="376">💎</text>
+        <text class="txt icon" x="605" y="412">7️⃣</text>
+      </g>
+
+      <!-- REEL 2 -->
+      <g class="r2" transform="translate(0,0)">
+        <text class="txt icon" x="715" y="88">🔔</text>
+        <text class="txt icon" x="715" y="124">🍋</text>
+        <text class="txt icon" x="715" y="160">💎</text>
+        <text class="txt icon" x="715" y="196">🍒</text>
+        <text class="txt icon" x="715" y="232">7️⃣</text>
+
+        <text class="txt icon" x="715" y="268">🔔</text>
+        <text class="txt icon" x="715" y="304">🍋</text>
+        <text class="txt icon" x="715" y="340">💎</text>
+        <text class="txt icon" x="715" y="376">🍒</text>
+        <text class="txt icon" x="715" y="412">7️⃣</text>
+      </g>
+
+      <!-- REEL 3 -->
+      <g class="r3" transform="translate(0,0)">
+        <text class="txt icon" x="825" y="88">🍋</text>
+        <text class="txt icon" x="825" y="124">💎</text>
+        <text class="txt icon" x="825" y="160">7️⃣</text>
+        <text class="txt icon" x="825" y="196">🔔</text>
+        <text class="txt icon" x="825" y="232">🍒</text>
+
+        <text class="txt icon" x="825" y="268">🍋</text>
+        <text class="txt icon" x="825" y="304">💎</text>
+        <text class="txt icon" x="825" y="340">7️⃣</text>
+        <text class="txt icon" x="825" y="376">🔔</text>
+        <text class="txt icon" x="825" y="412">🍒</text>
+      </g>
+    </g>
+
+    <!-- buttons -->
+    <g filter="url(#glow)">
+      <rect x="950" y="56" width="190" height="34" rx="12" fill="#0f1620" stroke="url(#g)" stroke-width="1.5" opacity=".95"/>
+      <text class="txt small" x="970" y="78" fill="#e5e7eb" opacity=".9">SPIN → ship fast</text>
+
+      <rect x="950" y="100" width="190" height="30" rx="12" fill="#0f1620" stroke="#334155" stroke-opacity=".6" />
+      <text class="txt small" x="970" y="120" fill="#e5e7eb" opacity=".7">risk = measured</text>
+    </g>
+  </g>
+
+  <!-- tiny footer hint -->
+  <text class="txt small" x="52" y="138">Aesthetics as performance — no gimmicks.</text>
+</svg>
