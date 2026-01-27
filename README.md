@@ -55,17 +55,12 @@ Denizcilik otomasyonundan kurumsal perakendeye uzanan deneyimimi modern dijital 
 
 ---
 
-<!-- ===================== STACK SECTION ===================== -->
+
+
+<!-- ===================== TECH STACK (V2 - README SAFE) ===================== -->
 <p align="center">
-  <img src="./assets/stack-section.svg" alt="Tech & Design Stack" />
+  <img src="assets/stackssction.svg" alt="Tech Stack – README Safe (V2)" />
 </p>
-
-
-<p align="center">
-  <img src="stackssction.svg" alt="Tech &amp; Design Stack" />
-</p>
-
-
 
 
 
