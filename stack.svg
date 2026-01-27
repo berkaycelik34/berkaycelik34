@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="86" viewBox="0 0 920 86">
+  <defs>
+    <style>
+      .label { font: 500 12px system-ui, -apple-system, Segoe UI, Roboto, Arial; fill: #777; letter-spacing: .2px; }
+      .frame { fill: rgba(0,0,0,0.035); }
+      @media (prefers-color-scheme: dark) {
+        .frame { fill: rgba(255,255,255,0.06); }
+        .label { fill: #9a9a9a; }
+      }
+    </style>
+
+    <clipPath id="clip">
+      <rect x="20" y="20" width="880" height="48" rx="14"/>
+    </clipPath>
+
+    <!-- icon sizing -->
+    <g id="icon" transform="translate(0,0)">
+      <!-- placeholder -->
+    </g>
+  </defs>
+
+  <!-- subtle frame -->
+  <rect class="frame" x="20" y="20" width="880" height="48" rx="14"/>
+  <text class="label" x="20" y="14">Core · Infrastructure · Creative</text>
+
+  <!-- marquee track -->
+  <g clip-path="url(#clip)">
+    <!-- The moving group -->
+    <g>
+      <!-- speed control: increase dur for slower -->
+      <animateTransform attributeName="transform" type="translate" from="0 0" to="-920 0" dur="20s" repeatCount="indefinite" />
+
+      <!-- ===== SET A (first 920px) ===== -->
+      <!-- Icon style: light gray in light mode, brighter in dark mode -->
+      <!-- Using Simple Icons CDN: https://cdn.simpleicons.org/:slug/:color?/:dark_mode_color? + params viewbox=auto&size=22 -->
+
+      <!-- row baseline -->
+      <g transform="translate(24,33)">
+        <!-- Core -->
+        <image href="https://cdn.simpleicons.org/react/666666/BBBBBB?viewbox=auto&amp;size=22" width="22" height="22" x="0"   y="0" />
+        <image href="https://cdn.simpleicons.org/javascript/666666/BBBBBB?viewbox=auto&amp;size=22" width="22" height="22" x="56"  y="0" />
+        <image href="https://cdn.simpleicons.org/html5/666666/BBBBBB?viewbox=auto&amp;size=22" width="22" height="22" x="112" y="0" />
+        <image href="https://cdn.simpleicons.org/css3/666666/BBBBBB?viewbox=auto&amp;size=22" width="22" height="22" x="168" y="0" />
+        <image href="https://cdn.simpleicons.org/medusa/666666/BBBBBB?viewbox=auto&amp;size=22" width="22" height="22" x="224" y="0" />
+
+        <!-- Infra -->
+        <image href="https://cdn.simpleicons.org/docker/666666/BBBBBB?viewbox=auto&amp;size=22" width="22" height="22" x="320" y="0" />
+        <image href="https://cdn.simpleicons.org/linux/666666/BBBBBB?viewbox=auto&amp;size=22" width="22" height="22" x="376" y="0" />
+        <image href="https://cdn.simpleicons.org/nginx/666666/BBBBBB?viewbox=auto&amp;size=22" width="22" height="22" x="432" y="0" />
+
+        <!-- Coolify (no Simple Icons slug guaranteed) -->
+        <image href="https://avatars.githubusercontent.com/u/103913525?s=64&amp;v=4" width="22" height="22" x="488" y="0" />
+
+        <!-- Creative -->
+        <image href="https://cdn.simpleicons.org/figma/666666/BBBBBB?viewbox=auto&amp;size=22" width="22" height="22" x="584" y="0" />
+        <image href="https://cdn.simpleicons.org/adobephotoshop/666666/BBBBBB?viewbox=auto&amp;size=22" width="22" height="22" x="640" y="0" />
+        <image href="https://cdn.simpleicons.org/adobeaftereffects/666666/BBBBBB?viewbox=auto&amp;size=22" width="22" height="22" x="696" y="0" />
+        <image href="https://cdn.simpleicons.org/adobepremierepro/666666/BBBBBB?viewbox=auto&amp;size=22" width="22" height="22" x="752" y="0" />
+      </g>
+
+      <!-- ===== SET B (repeat for seamless loop, shifted by +920px) ===== -->
+      <g transform="translate(944,33)">
+        <image href="https://cdn.simpleicons.org/react/666666/BBBBBB?viewbox=auto&amp;size=22" width="22" height="22" x="0"   y="0" />
+        <image href="https://cdn.simpleicons.org/javascript/666666/BBBBBB?viewbox=auto&amp;size=22" width="22" height="22" x="56"  y="0" />
+        <image href="https://cdn.simpleicons.org/html5/666666/BBBBBB?viewbox=auto&amp;size=22" width="22" height="22" x="112" y="0" />
+        <image href="https://cdn.simpleicons.org/css3/666666/BBBBBB?viewbox=auto&amp;size=22" width="22" height="22" x="168" y="0" />
+        <image href="https://cdn.simpleicons.org/medusa/666666/BBBBBB?viewbox=auto&amp;size=22" width="22" height="22" x="224" y="0" />
+
+        <image href="https://cdn.simpleicons.org/docker/666666/BBBBBB?viewbox=auto&amp;size=22" width="22" height="22" x="320" y="0" />
+        <image href="https://cdn.simpleicons.org/linux/666666/BBBBBB?viewbox=auto&amp;size=22" width="22" height="22" x="376" y="0" />
+        <image href="https://cdn.simpleicons.org/nginx/666666/BBBBBB?viewbox=auto&amp;size=22" width="22" height="22" x="432" y="0" />
+        <image href="https://avatars.githubusercontent.com/u/103913525?s=64&amp;v=4" width="22" height="22" x="488" y="0" />
+
+        <image href="https://cdn.simpleicons.org/figma/666666/BBBBBB?viewbox=auto&amp;size=22" width="22" height="22" x="584" y="0" />
+        <image href="https://cdn.simpleicons.org/adobephotoshop/666666/BBBBBB?viewbox=auto&amp;size=22" width="22" height="22" x="640" y="0" />
+        <image href="https://cdn.simpleicons.org/adobeaftereffects/666666/BBBBBB?viewbox=auto&amp;size=22" width="22" height="22" x="696" y="0" />
+        <image href="https://cdn.simpleicons.org/adobepremierepro/666666/BBBBBB?viewbox=auto&amp;size=22" width="22" height="22" x="752" y="0" />
+      </g>
+    </g>
+  </g>
+</svg>
