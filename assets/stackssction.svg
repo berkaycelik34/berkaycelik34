@@ -16,17 +16,17 @@
       <stop offset="1" stop-color="#7aa86b"/>
     </linearGradient>
 
-    <!-- README-safe shimmer: rectangle moves, no mask/filter -->
     <linearGradient id="shine" x1="0" y1="0" x2="1" y2="0">
       <stop offset="0" stop-color="#ffffff" stop-opacity="0"/>
       <stop offset="0.5" stop-color="#ffffff" stop-opacity="0.07"/>
       <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
     </linearGradient>
 
-    <g id="chip170">
-      <rect class="chip" x="0" y="0" width="170" height="30" rx="999"/>
+    <!-- chip component -->
+    <g id="chipW">
+      <rect class="chip" x="0" y="0" width="176" height="30" rx="999"/>
       <circle cx="16" cy="15" r="4" fill="url(#accent)"/>
-      <text class="chipText" x="28" y="20">LABEL</text>
+      <text class="chipText" x="32" y="20">LABEL</text>
     </g>
   </defs>
 
@@ -47,57 +47,57 @@
   <text class="k" x="336" y="112">Infrastructure</text>
   <text class="k" x="642" y="112">Creative</text>
 
-  <!-- chips: Core -->
+  <!-- Core -->
   <g transform="translate(44,124)">
     <g>
-      <use href="#chip170"/>
-      <text class="chipText" x="28" y="20">React</text>
+      <use href="#chipW"/>
+      <text class="chipText" x="32" y="20">React</text>
     </g>
     <g transform="translate(0,38)">
-      <use href="#chip170"/>
-      <text class="chipText" x="28" y="20">Medusa</text>
+      <use href="#chipW"/>
+      <text class="chipText" x="32" y="20">Medusa</text>
     </g>
     <g transform="translate(0,76)">
-      <use href="#chip170"/>
-      <text class="chipText" x="28" y="20">JavaScript</text>
+      <use href="#chipW"/>
+      <text class="chipText" x="32" y="20">Vite</text>
     </g>
   </g>
 
-  <!-- chips: Infrastructure -->
+  <!-- Infrastructure -->
   <g transform="translate(336,124)">
     <g>
-      <use href="#chip170"/>
-      <text class="chipText" x="28" y="20">Coolify</text>
+      <use href="#chipW"/>
+      <text class="chipText" x="32" y="20">Coolify</text>
     </g>
     <g transform="translate(0,38)">
-      <use href="#chip170"/>
-      <text class="chipText" x="28" y="20">Docker</text>
+      <use href="#chipW"/>
+      <text class="chipText" x="32" y="20">Docker</text>
     </g>
     <g transform="translate(0,76)">
-      <use href="#chip170"/>
-      <text class="chipText" x="28" y="20">Nginx</text>
+      <use href="#chipW"/>
+      <text class="chipText" x="32" y="20">Nginx</text>
     </g>
   </g>
 
-  <!-- chips: Creative -->
+  <!-- Creative -->
   <g transform="translate(642,124)">
     <g>
-      <use href="#chip170"/>
-      <text class="chipText" x="28" y="20">Figma</text>
+      <use href="#chipW"/>
+      <text class="chipText" x="32" y="20">Figma</text>
     </g>
     <g transform="translate(0,38)">
-      <use href="#chip170"/>
-      <text class="chipText" x="28" y="20">After Effects</text>
+      <use href="#chipW"/>
+      <text class="chipText" x="32" y="20">After Effects</text>
     </g>
     <g transform="translate(0,76)">
-      <use href="#chip170"/>
-      <text class="chipText" x="28" y="20">Premiere Pro</text>
+      <use href="#chipW"/>
+      <text class="chipText" x="32" y="20">Premiere Pro</text>
     </g>
   </g>
 
-  <!-- shimmer sweep (README-safe) -->
+  <!-- shimmer sweep -->
   <g opacity="1">
-    <rect x="-240" y="18" width="240" height="204" fill="url(#shine)" opacity="1">
+    <rect x="-240" y="18" width="240" height="204" fill="url(#shine)">
       <animate attributeName="x" values="-240;920" dur="4.6s" repeatCount="indefinite"/>
     </rect>
   </g>
