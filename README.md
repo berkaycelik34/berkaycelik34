@@ -60,6 +60,15 @@ Denizcilik otomasyonundan kurumsal perakendeye uzanan deneyimimi modern dijital 
   <img src="./assets/stack-section.svg" alt="Tech & Design Stack" />
 </p>
 
+
+<p align="center">
+  <img src="assets/stack-section.svg" alt="Tech &amp; Design Stack" />
+</p>
+
+
+
+
+
 ---
 
 <h2 align="center">🧠 Çalışma Prensipleri</h2>
