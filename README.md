@@ -1,10 +1,12 @@
 <!-- ===================== HERO ===================== -->
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=180&text=Berkay%20Çelik&fontSize=42&fontAlignY=36" />
+  <img
+    src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=180&text=Berkay%20Çelik&fontSize=42&fontAlignY=36"
+  />
 </p>
 
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Inter&weight=500&size=18&pause=1200&color=666666&center=true&vCenter=true&width=520&lines=The+Swiss+Army+Knife+of+Tech+%26+Design;Tech+%7C+Design+%7C+Strategy;Minimal.+Functional.+Performance-driven." />
+  <i>The Swiss Army Knife of Tech & Design</i>
 </p>
 
 <p align="center">
@@ -13,7 +15,7 @@
 
 ---
 
-<!-- ===================== ECOSYSTEM ===================== -->
+<!-- ===================== CAREER ECOSYSTEM ===================== -->
 <h2 align="center">🧩 Kariyer Ekosistemi</h2>
 
 <p align="center" width="70%">
@@ -55,14 +57,12 @@ Denizcilik otomasyonundan kurumsal perakendeye uzanan deneyimimi modern dijital 
 
 ---
 
-<!-- ===================== TECH STACK ===================== -->
-<!-- ===================== TECH STACK ===================== -->
-
-
-<!-- ===================== DIVIDER ===================== -->
+<!-- ===================== TECH & DESIGN STACK (CUSTOM SVG) ===================== -->
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&height=2&section=footer" />
+  <img src="./assets/stack-section.svg" alt="Tech & Design Stack" />
 </p>
+
+---
 
 <!-- ===================== PRINCIPLES ===================== -->
 <h2 align="center">🧠 Çalışma Prensipleri</h2>
@@ -89,14 +89,16 @@ En güçlü projelerim, profilimde sabitlenmiş (Pinned) repo’lar üzerinden s
 ⌘ Status: <b>TR Mode Active</b>
 </p>
 
-<!-- ===================== MICRO STATS (VIEWS / STARS / FOLLOWERS) ===================== -->
+<!-- ===================== MICRO STATS ===================== -->
 <p align="center">
-  <img src="https://komarev.com/ghpvc/?username=berkaycelik34&label=Views&style=flat&color=1f2937&labelColor=0b0f14" alt="Views" />
-  <img src="https://img.shields.io/github/stars/berkaycelik34?label=Stars&style=flat&color=1f2937&labelColor=0b0f14" alt="Stars" />
-  <img src="https://img.shields.io/github/followers/berkaycelik34?label=Followers&style=flat&color=1f2937&labelColor=0b0f14" alt="Followers" />
+  <img src="https://komarev.com/ghpvc/?username=berkaycelik34&label=Views&style=flat&color=1f2937&labelColor=0b0f14" />
+  <img src="https://img.shields.io/github/stars/berkaycelik34?label=Stars&style=flat&color=1f2937&labelColor=0b0f14" />
+  <img src="https://img.shields.io/github/followers/berkaycelik34?label=Followers&style=flat&color=1f2937&labelColor=0b0f14" />
 </p>
 
-<!-- ===================== FOOTER ANIMATION ===================== -->
+<!-- ===================== FOOTER ===================== -->
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=110&section=footer" />
+  <img
+    src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=110&section=footer"
+  />
 </p>
