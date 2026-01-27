@@ -1,104 +1,52 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="920" height="240" viewBox="0 0 920 240">
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="180" viewBox="0 0 920 180" role="img" aria-label="Tech Design Stack">
   <defs>
-    <style>
-      .card { fill: #0b0f14; stroke: #1b2430; }
-      .t { font: 700 18px system-ui, -apple-system, Segoe UI, Roboto, Arial; fill: #f2f2f2; }
-      .s { font: 500 12px system-ui, -apple-system, Segoe UI, Roboto, Arial; fill: #9aa4b2; }
-      .k { font: 700 12px system-ui, -apple-system, Segoe UI, Roboto, Arial; fill: #cfd6df; letter-spacing: .2px; }
-      .chip { fill: #0f1620; stroke: #223041; }
-      .chipText { font: 600 12px system-ui, -apple-system, Segoe UI, Roboto, Arial; fill: #d7dde6; }
-      .line { stroke: #1b2430; }
-    </style>
-
+    <!-- Accent -->
     <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#2f4bd6"/>
-      <stop offset="0.5" stop-color="#2aa5a5"/>
-      <stop offset="1" stop-color="#7aa86b"/>
+      <stop offset="0" stop-color="#4c6fff"/>
+      <stop offset="0.5" stop-color="#27c3b5"/>
+      <stop offset="1" stop-color="#9ad06f"/>
     </linearGradient>
 
+    <!-- README-safe shine -->
     <linearGradient id="shine" x1="0" y1="0" x2="1" y2="0">
       <stop offset="0" stop-color="#ffffff" stop-opacity="0"/>
-      <stop offset="0.5" stop-color="#ffffff" stop-opacity="0.07"/>
+      <stop offset="0.5" stop-color="#ffffff" stop-opacity="0.12"/>
       <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
     </linearGradient>
 
-    <!-- chip component -->
-    <g id="chipW">
-      <rect class="chip" x="0" y="0" width="176" height="30" rx="999"/>
-      <circle cx="16" cy="15" r="4" fill="url(#accent)"/>
-      <text class="chipText" x="32" y="20">LABEL</text>
-    </g>
+    <style>
+      .card { fill:#0b0f14; stroke:#223041; stroke-width:1; }
+      .title {
+        font:800 22px ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial;
+        fill:#ffffff;
+      }
+      .col {
+        font:800 15px ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial;
+        fill:#e9eef7;
+        letter-spacing:1px;
+      }
+      .line { stroke:#1b2430; stroke-width:1; }
+    </style>
   </defs>
 
-  <!-- container -->
-  <rect class="card" x="18" y="18" width="884" height="204" rx="18"/>
+  <!-- Card -->
+  <rect class="card" x="18" y="18" width="884" height="144" rx="18"/>
   <rect x="18" y="18" width="884" height="3" rx="2" fill="url(#accent)"/>
 
-  <!-- header -->
-  <text class="t" x="44" y="58">🛠️ Tech &amp; Design Stack</text>
-  <text class="s" x="44" y="80">Core · Infrastructure · Creative</text>
+  <!-- Header -->
+  <text class="title" x="44" y="60">🛠️ Tech &amp; Design Stack</text>
 
-  <!-- dividers -->
-  <line class="line" x1="306" y1="98" x2="306" y2="206"/>
-  <line class="line" x1="612" y1="98" x2="612" y2="206"/>
+  <!-- Dividers -->
+  <line class="line" x1="306" y1="80" x2="306" y2="148"/>
+  <line class="line" x1="612" y1="80" x2="612" y2="148"/>
 
-  <!-- column titles -->
-  <text class="k" x="44"  y="112">Core</text>
-  <text class="k" x="336" y="112">Infrastructure</text>
-  <text class="k" x="642" y="112">Creative</text>
+  <!-- Column titles -->
+  <text class="col" x="44"  y="118">CORE</text>
+  <text class="col" x="336" y="118">INFRASTRUCTURE</text>
+  <text class="col" x="642" y="118">CREATIVE</text>
 
-  <!-- Core -->
-  <g transform="translate(44,124)">
-    <g>
-      <use href="#chipW"/>
-      <text class="chipText" x="32" y="20">React</text>
-    </g>
-    <g transform="translate(0,38)">
-      <use href="#chipW"/>
-      <text class="chipText" x="32" y="20">Medusa</text>
-    </g>
-    <g transform="translate(0,76)">
-      <use href="#chipW"/>
-      <text class="chipText" x="32" y="20">Vite</text>
-    </g>
-  </g>
-
-  <!-- Infrastructure -->
-  <g transform="translate(336,124)">
-    <g>
-      <use href="#chipW"/>
-      <text class="chipText" x="32" y="20">Coolify</text>
-    </g>
-    <g transform="translate(0,38)">
-      <use href="#chipW"/>
-      <text class="chipText" x="32" y="20">Docker</text>
-    </g>
-    <g transform="translate(0,76)">
-      <use href="#chipW"/>
-      <text class="chipText" x="32" y="20">Nginx</text>
-    </g>
-  </g>
-
-  <!-- Creative -->
-  <g transform="translate(642,124)">
-    <g>
-      <use href="#chipW"/>
-      <text class="chipText" x="32" y="20">Figma</text>
-    </g>
-    <g transform="translate(0,38)">
-      <use href="#chipW"/>
-      <text class="chipText" x="32" y="20">After Effects</text>
-    </g>
-    <g transform="translate(0,76)">
-      <use href="#chipW"/>
-      <text class="chipText" x="32" y="20">Premiere Pro</text>
-    </g>
-  </g>
-
-  <!-- shimmer sweep -->
-  <g opacity="1">
-    <rect x="-240" y="18" width="240" height="204" fill="url(#shine)">
-      <animate attributeName="x" values="-240;920" dur="4.6s" repeatCount="indefinite"/>
-    </rect>
-  </g>
+  <!-- Subtle shine -->
+  <rect x="-240" y="18" width="240" height="144" fill="url(#shine)">
+    <animate attributeName="x" values="-240;920" dur="5s" repeatCount="indefinite"/>
+  </rect>
 </svg>
