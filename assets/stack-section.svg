@@ -19,14 +19,12 @@
       }
     </style>
 
-    <!-- hero/footer ile uyumlu gradient accent -->
     <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
       <stop offset="0" stop-color="#2f4bd6"/>
       <stop offset="0.5" stop-color="#2aa5a5"/>
       <stop offset="1" stop-color="#7aa86b"/>
     </linearGradient>
 
-    <!-- premium shimmer -->
     <linearGradient id="shimmer" x1="-1" y1="0" x2="0" y2="0">
       <stop offset="0" stop-color="rgba(255,255,255,0)"/>
       <stop offset=".5" stop-color="rgba(255,255,255,.10)"/>
@@ -37,7 +35,6 @@
 
     <mask id="m">
       <rect x="0" y="0" width="920" height="260" fill="white"/>
-      <!-- shimmer band -->
       <rect x="0" y="0" width="920" height="260" fill="url(#shimmer)"/>
     </mask>
 
@@ -54,32 +51,26 @@
       </feMerge>
     </filter>
 
-    <!-- chip component -->
     <g id="chip">
-      <rect class="chip" x="0" y="0" width="136" height="30" rx="999"/>
+      <rect class="chip" x="0" y="0" width="170" height="30" rx="999"/>
       <circle cx="16" cy="15" r="4" fill="url(#accent)" opacity=".95"/>
       <text class="chipText" x="28" y="20">LABEL</text>
     </g>
   </defs>
 
-  <!-- container -->
   <rect class="card" x="18" y="18" width="884" height="224" rx="18" filter="url(#soft)"/>
   <rect x="18" y="18" width="884" height="3" rx="2" fill="url(#accent)" opacity="0.95"/>
 
-  <!-- header -->
-  <text class="title" x="44" y="62">🛠️ Tech & Design Stack</text>
+  <text class="title" x="44" y="62">🛠️ Tech &amp; Design Stack</text>
   <text class="sub" x="44" y="84">React · Medusa · Coolify · Infrastructure · Creative Tooling</text>
 
-  <!-- columns -->
   <line class="divider" x1="306" y1="108" x2="306" y2="214"/>
   <line class="divider" x1="612" y1="108" x2="612" y2="214"/>
 
-  <!-- column titles -->
   <text class="k" x="44"  y="120">Core</text>
   <text class="k" x="336" y="120">Infrastructure</text>
   <text class="k" x="642" y="120">Creative</text>
 
-  <!-- chips: Core -->
   <g transform="translate(44,132)">
     <g>
       <use href="#chip"/>
@@ -95,7 +86,6 @@
     </g>
   </g>
 
-  <!-- chips: Infrastructure -->
   <g transform="translate(336,132)">
     <g>
       <use href="#chip"/>
@@ -111,7 +101,6 @@
     </g>
   </g>
 
-  <!-- chips: Creative -->
   <g transform="translate(642,132)">
     <g>
       <use href="#chip"/>
@@ -127,6 +116,5 @@
     </g>
   </g>
 
-  <!-- subtle shimmer overlay (premium) -->
   <rect x="18" y="18" width="884" height="224" rx="18" fill="white" opacity=".10" mask="url(#m)"/>
 </svg>
