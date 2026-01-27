@@ -24,119 +24,151 @@
       .bg { fill:#0b0f14; }
       .panel { fill:#0f1620; stroke:#334155; stroke-opacity:.45; }
       .neon { fill:none; stroke:url(#g); stroke-width:2; opacity:.9; filter:url(#glow); }
-      .txt { fill:#e5e7eb; font-family: Inter, system-ui, -apple-system, Segoe UI, Arial; }
-      .small { font-size:14px; opacity:.7; }
-      .title { font-size:18px; opacity:.92; }
+      .txt { fill:#e5e7eb; font-family: system-ui, -apple-system, Segoe UI, Arial; }
+      .quote { font-size:16px; opacity:.9; }
       .icon { font-size:34px; filter:url(#glow); }
 
-      /* reel scroll */
-      @keyframes reel {
-        from { transform: translateY(0); }
-        to   { transform: translateY(-180px); } /* 5 symbols * 36px step */
+      /* ===== REEL (777 snap) ===== */
+      @keyframes reelJackpot {
+        0%   { transform: translateY(0); }
+        76%  { transform: translateY(-180px); }
+        82%  { transform: translateY(-144px); }
+        90%  { transform: translateY(-144px); }
+        100% { transform: translateY(0); }
       }
-      .r1 { animation: reel 1.55s linear infinite; }
-      .r2 { animation: reel 1.85s linear infinite; }
-      .r3 { animation: reel 1.65s linear infinite; }
+      .r1,.r2,.r3 { animation: reelJackpot 6.8s linear infinite; }
 
-      /* scanline glow */
+      /* scanline */
       @keyframes scan {
-        0% { transform: translateY(0); opacity:.0; }
-        15% { opacity:.35; }
-        50% { opacity:.25; }
-        85% { opacity:.35; }
-        100% { transform: translateY(62px); opacity:.0; }
+        0% { transform: translateY(0); opacity:0; }
+        12% { opacity:.35; }
+        50% { opacity:.22; }
+        88% { opacity:.35; }
+        100% { transform: translateY(62px); opacity:0; }
       }
       .scan { animation: scan 2.2s ease-in-out infinite; }
+
+      /* flash + afterglow */
+      @keyframes jackpotFlash {
+        0%,77% { opacity:0; }
+        82% { opacity:.9; }
+        86% { opacity:.15; }
+        90% { opacity:.55; }
+        100% { opacity:0; }
+      }
+      .jflash { animation: jackpotFlash 6.8s ease-in-out infinite; }
+
+      @keyframes afterglow {
+        0%,89% { opacity:0; }
+        90% { opacity:.45; }
+        97% { opacity:0; }
+        100% { opacity:0; }
+      }
+      .after { animation: afterglow 6.8s ease-out infinite; }
+
+      /* ring burst */
+      @keyframes ringBurst {
+        0%,79% { opacity:0; transform:scale(.65); }
+        82% { opacity:.9; transform:scale(.9); }
+        86% { opacity:.55; transform:scale(1.25); }
+        92% { opacity:0; transform:scale(1.6); }
+        100% { opacity:0; }
+      }
+      .burst {
+        transform-origin:725px 90px;
+        animation:ringBurst 6.8s ease-out infinite;
+        filter:url(#glow);
+      }
+
+      /* jitter */
+      @keyframes jitter {
+        0%,79% { transform:translate(0,0); }
+        80% { transform:translate(.6px,-.4px); }
+        82% { transform:translate(-.7px,.5px); }
+        84% { transform:translate(.5px,.3px); }
+        86% { transform:translate(-.6px,-.2px); }
+        88% { transform:translate(.4px,-.5px); }
+        90% { transform:translate(-.4px,.4px); }
+        92%,100% { transform:translate(0,0); }
+      }
+      .shake { animation:jitter 6.8s linear infinite; }
+
+      /* spin pulse */
+      @keyframes spinPulse {
+        0%,79% { transform:scale(1); }
+        82% { transform:scale(1.05); }
+        86% { transform:scale(.99); }
+        90% { transform:scale(1.03); }
+        100% { transform:scale(1); }
+      }
+      .spinBtn {
+        transform-origin:1045px 73px;
+        animation:spinPulse 6.8s ease-in-out infinite;
+        filter:url(#glow);
+      }
     </style>
 
-    <!-- clip for reels -->
     <clipPath id="reelClip">
       <rect x="560" y="54" width="330" height="72" rx="14"/>
     </clipPath>
   </defs>
 
-  <!-- outer card -->
-  <rect class="bg" x="0" y="0" width="1200" height="180" rx="26"/>
+  <rect class="bg" width="1200" height="180" rx="26"/>
   <rect class="neon" x="18" y="18" width="1164" height="144" rx="22"/>
 
-  <!-- left text -->
-  <text class="txt title" x="52" y="74">Slot-grade motion, minimal surface.</text>
-  <text class="txt small" x="52" y="98">Smooth loops • crisp UI • controlled noise</text>
+  <!-- TEK METİN -->
+  <text class="txt quote" x="52" y="98">Algoritma her zaman kazanır</text>
 
-  <!-- slot body -->
-  <g>
+  <!-- SLOT -->
+  <g class="shake">
     <rect class="panel" x="520" y="40" width="410" height="100" rx="20"/>
     <rect fill="url(#glass)" x="520" y="40" width="410" height="100" rx="20"/>
 
-    <!-- reels window -->
-    <rect x="560" y="54" width="330" height="72" rx="14" fill="#0b0f14" opacity=".95" stroke="#334155" stroke-opacity=".5"/>
-
-    <!-- reel separators -->
+    <rect x="560" y="54" width="330" height="72" rx="14" fill="#0b0f14" stroke="#334155" stroke-opacity=".5"/>
     <line x1="670" y1="54" x2="670" y2="126" stroke="#334155" stroke-opacity=".55"/>
     <line x1="780" y1="54" x2="780" y2="126" stroke="#334155" stroke-opacity=".55"/>
 
-    <!-- scanline -->
-    <rect class="scan" x="560" y="60" width="330" height="10" rx="6" fill="url(#g)" opacity=".0" filter="url(#glow)"/>
+    <rect class="scan" x="560" y="60" width="330" height="10" rx="6" fill="url(#g)" opacity="0"/>
+    <rect class="jflash" x="560" y="54" width="330" height="72" rx="14" fill="url(#g)" opacity="0"/>
+    <rect class="after" x="560" y="54" width="330" height="72" rx="14" fill="url(#g)" opacity="0"/>
 
-    <!-- reels (clipped) -->
+    <g class="burst">
+      <circle cx="725" cy="90" r="18" fill="none" stroke="url(#g)" stroke-width="3"/>
+      <circle cx="725" cy="90" r="34" fill="none" stroke="#e5e7eb" stroke-opacity=".35" stroke-width="2"/>
+    </g>
+
+    <!-- reels -->
     <g clip-path="url(#reelClip)">
-      <!-- REEL 1 -->
-      <g class="r1" transform="translate(0,0)">
-        <!-- sequence (repeat twice for seamless loop) -->
-        <text class="txt icon" x="605" y="88">🍒</text>
-        <text class="txt icon" x="605" y="124">🔔</text>
-        <text class="txt icon" x="605" y="160">🍋</text>
-        <text class="txt icon" x="605" y="196">💎</text>
-        <text class="txt icon" x="605" y="232">7️⃣</text>
-
-        <text class="txt icon" x="605" y="268">🍒</text>
-        <text class="txt icon" x="605" y="304">🔔</text>
-        <text class="txt icon" x="605" y="340">🍋</text>
-        <text class="txt icon" x="605" y="376">💎</text>
-        <text class="txt icon" x="605" y="412">7️⃣</text>
+      <g class="r1">
+        <text class="icon" x="605" y="88">🍒</text><text class="icon" x="605" y="124">🔔</text>
+        <text class="icon" x="605" y="160">🍋</text><text class="icon" x="605" y="196">💎</text>
+        <text class="icon" x="605" y="232">7️⃣</text>
+        <text class="icon" x="605" y="268">🍒</text><text class="icon" x="605" y="304">🔔</text>
+        <text class="icon" x="605" y="340">🍋</text><text class="icon" x="605" y="376">💎</text>
+        <text class="icon" x="605" y="412">7️⃣</text>
       </g>
-
-      <!-- REEL 2 -->
-      <g class="r2" transform="translate(0,0)">
-        <text class="txt icon" x="715" y="88">🔔</text>
-        <text class="txt icon" x="715" y="124">🍋</text>
-        <text class="txt icon" x="715" y="160">💎</text>
-        <text class="txt icon" x="715" y="196">🍒</text>
-        <text class="txt icon" x="715" y="232">7️⃣</text>
-
-        <text class="txt icon" x="715" y="268">🔔</text>
-        <text class="txt icon" x="715" y="304">🍋</text>
-        <text class="txt icon" x="715" y="340">💎</text>
-        <text class="txt icon" x="715" y="376">🍒</text>
-        <text class="txt icon" x="715" y="412">7️⃣</text>
+      <g class="r2">
+        <text class="icon" x="715" y="88">🍒</text><text class="icon" x="715" y="124">🔔</text>
+        <text class="icon" x="715" y="160">🍋</text><text class="icon" x="715" y="196">💎</text>
+        <text class="icon" x="715" y="232">7️⃣</text>
+        <text class="icon" x="715" y="268">🍒</text><text class="icon" x="715" y="304">🔔</text>
+        <text class="icon" x="715" y="340">🍋</text><text class="icon" x="715" y="376">💎</text>
+        <text class="icon" x="715" y="412">7️⃣</text>
       </g>
-
-      <!-- REEL 3 -->
-      <g class="r3" transform="translate(0,0)">
-        <text class="txt icon" x="825" y="88">🍋</text>
-        <text class="txt icon" x="825" y="124">💎</text>
-        <text class="txt icon" x="825" y="160">7️⃣</text>
-        <text class="txt icon" x="825" y="196">🔔</text>
-        <text class="txt icon" x="825" y="232">🍒</text>
-
-        <text class="txt icon" x="825" y="268">🍋</text>
-        <text class="txt icon" x="825" y="304">💎</text>
-        <text class="txt icon" x="825" y="340">7️⃣</text>
-        <text class="txt icon" x="825" y="376">🔔</text>
-        <text class="txt icon" x="825" y="412">🍒</text>
+      <g class="r3">
+        <text class="icon" x="825" y="88">🍒</text><text class="icon" x="825" y="124">🔔</text>
+        <text class="icon" x="825" y="160">🍋</text><text class="icon" x="825" y="196">💎</text>
+        <text class="icon" x="825" y="232">7️⃣</text>
+        <text class="icon" x="825" y="268">🍒</text><text class="icon" x="825" y="304">🔔</text>
+        <text class="icon" x="825" y="340">🍋</text><text class="icon" x="825" y="376">💎</text>
+        <text class="icon" x="825" y="412">7️⃣</text>
       </g>
     </g>
 
-    <!-- buttons -->
-    <g filter="url(#glow)">
-      <rect x="950" y="56" width="190" height="34" rx="12" fill="#0f1620" stroke="url(#g)" stroke-width="1.5" opacity=".95"/>
-      <text class="txt small" x="970" y="78" fill="#e5e7eb" opacity=".9">SPIN → ship fast</text>
-
-      <rect x="950" y="100" width="190" height="30" rx="12" fill="#0f1620" stroke="#334155" stroke-opacity=".6" />
-      <text class="txt small" x="970" y="120" fill="#e5e7eb" opacity=".7">risk = measured</text>
+    <!-- SPIN -->
+    <g class="spinBtn">
+      <rect x="950" y="56" width="190" height="34" rx="12" fill="#0f1620" stroke="url(#g)" stroke-width="1.5"/>
+      <text class="txt" x="970" y="78" font-size="14">SPIN</text>
     </g>
   </g>
-
-  <!-- tiny footer hint -->
-  <text class="txt small" x="52" y="138">Aesthetics as performance — no gimmicks.</text>
 </svg>
