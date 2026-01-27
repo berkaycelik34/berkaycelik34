@@ -56,17 +56,8 @@ Denizcilik otomasyonundan kurumsal perakendeye uzanan deneyimimi modern dijital 
 ---
 
 <!-- ===================== TECH STACK ===================== -->
-<h2 align="center">🛠️ Tech & Design Stack</h2>
+<!-- ===================== TECH STACK ===================== -->
 
-<p align="center">
-  <img src="./assets/stack.svg" alt="Tech Stack" />
-</p>
-
-<p align="center">
-  <sub>Minimal tools. Maximum output.</sub>
-</p>
-
----
 
 <!-- ===================== DIVIDER ===================== -->
 <p align="center">
