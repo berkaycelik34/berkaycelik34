@@ -6,7 +6,12 @@
   />
 </p>
 
-<!-- ===================== TAGLINES (TR/EN) ===================== -->
+<!-- ===================== UNIQLEGACY ===================== -->
+<p align="center">
+  <img src="assets/uniqlegacy-hud.svg" alt="uniqlegacy hacking HUD" width="860" />
+</p>
+
+<!-- ===================== TAGLINES ===================== -->
 <p align="center">
   <img
     src="https://readme-typing-svg.demolab.com?font=Inter&style=italic&weight=400&size=20&pause=3000&color=A9A9A9&center=true&vCenter=true&width=640&height=30&lines=The+Swiss+Army+Knife+of+Tech+%26+Design;Teknoloji+ve+Tasar%C4%B1m%C4%B1n+%C4%B0svi%C3%A7re+%C3%87ak%C4%B1s%C4%B1"
@@ -19,21 +24,33 @@
   />
 </p>
 
-<!-- ===================== SLOT MACHINE (local SVG) ===================== -->
-<p align="center">
-  <img src="assets/slot-machine.svg" alt="Casino HUD" width="820" />
-</p>
-
 ---
 
 <!-- ===================== CAREER ECOSYSTEM ===================== -->
 <h2 align="center">🧩 Kariyer Ekosistemi / Career Ecosystem</h2>
 
-> [!IMPORTANT]
-> **🇹🇷 TR:** Teknoloji, tasarım ve stratejiyi tek bir üretim disiplininde birleştiren çok yönlü bir profesyonelim. Denizcilik otomasyonundan kurumsal perakendeye uzanan deneyimimi modern dijital ürün geliştirme anlayışıyla harmanlıyorum.
+<table>
+  <tr>
+    <td width="65%" valign="top">
 
-> [!NOTE]
-> **🇺🇸 EN:** A versatile professional blending technology, design, and strategy. I merge my experience from maritime automation to corporate retail with a modern digital product development approach.
+Teknoloji, tasarım ve stratejiyi tek bir üretim disiplininde birleştiririm.  
+Denizcilik otomasyonundan kurumsal perakendeye uzanan deneyimi,  
+modern dijital ürün geliştirme anlayışıyla harmanlarım.
+
+A versatile professional blending technology, design, and strategy —  
+merging experience from maritime automation to corporate retail  
+with a modern digital product development approach.
+
+  </td>
+    <td width="35%" align="right" valign="top">
+      <img src="assets/flow-signal.svg" width="220" alt="system flow" />
+    </td>
+  </tr>
+</table>
+
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&height=2" width="60%" alt="" />
+</p>
 
 ---
 
@@ -46,29 +63,35 @@
   <sub>Built like a casino UI: fast, crisp, and bias-free.</sub>
 </p>
 
+<!-- ===================== SLOT MACHINE ===================== -->
+<p align="center">
+  <img src="assets/slot-machine.svg" alt="Casino HUD" width="820" />
+</p>
+
 ---
 
 <!-- ===================== WORKING PRINCIPLES ===================== -->
 <h2 align="center">🧠 Çalışma Prensipleri / Working Principles</h2>
 
-> [!IMPORTANT]
-> **🇹🇷 TR:** Gereksiz karmaşıklığı azaltır, işlevi öne çıkarırım. Estetik benim için bir süs değil, bir performans aracıdır. Ürünü sadece üretmekle kalmaz, sürdürülebilir hale getiririm.
+Gereksiz karmaşıklığı azaltır, işlevi öne çıkarırım.  
+Estetik benim için bir süs değil, bir performans aracıdır.  
+Ürünleri sadece üretmem; sürdürülebilir hale getiririm.
 
-> [!NOTE]
-> **🇺🇸 EN:** I reduce unnecessary complexity and prioritize function. For me, aesthetics is not a decoration but a performance tool. I don't just build products; I make them sustainable.
+I reduce unnecessary complexity and prioritize function.  
+Aesthetics is not decoration, but a performance tool.  
+I don’t just build products — I make them sustainable.
+
+<p align="left">
+  <img src="assets/system-divider.svg" width="360" alt="divider" />
+</p>
 
 ---
 
-<!-- ===================== CONTACT (casino vibe) ===================== -->
+<!-- ===================== CONTACT ===================== -->
 <p align="center">
-  <img src="assets/contact.svg" alt="Contact bar" width="920" />
-</p>
-
-
-<p align="center">
-  <a href="https://celikberkay.com"><b>celikberkay.com</b></a>
+  <b>celikberkay.com</b>
   &nbsp;·&nbsp;
-  <a href="mailto:infogit@celikberkay.com"><b>infogit@celikberkay.com</b></a>
+  <b>infogit@celikberkay.com</b>
 </p>
 
 <p align="center">
