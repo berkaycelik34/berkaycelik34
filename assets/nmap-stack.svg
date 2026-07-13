@@ -54,7 +54,7 @@
       <text class="port" x="20" y="192">6443/tcp</text>
       <text class="st"   x="150" y="192">open</text>
       <text class="svc"  x="250" y="192">orchestration</text>
-      <text class="muted" x="420" y="192">kubernetes &#183; helm &#183; kubectl</text>
+      <text class="muted" x="420" y="192">kubernetes &#183; helm &#183; coolify</text>
     </g>
   </g>
 </svg>
