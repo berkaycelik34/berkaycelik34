@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="860" height="300" viewBox="0 0 860 300" role="img" aria-label="global server fleet status — oracle cloud, arm64 and x86_64">
+  <defs>
+    <style>
+      .mono{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,"Courier New",monospace;}
+      .cmd{fill:#64748b;font-size:17px;}
+      .prompt{fill:#22c55e;}
+      .flag{fill:#22d3ee;}
+      .panel{fill:#0b0f14;stroke:#1b2430;stroke-width:1;}
+      .head{fill:#475569;font-size:11px;letter-spacing:1px;}
+      .node{fill:#22d3ee;font-size:13px;}
+      .reg{fill:#e5e7eb;font-size:13px;}
+      .arm{fill:#22d3ee;font-size:13px;}
+      .x64{fill:#a855f7;font-size:13px;}
+      .lat{fill:#64748b;font-size:13px;}
+      .on{fill:#22c55e;font-size:13px;}
+      .foot{fill:#334155;font-size:12px;}
+      .dot{fill:#22c55e;animation:ping 2.4s ease-in-out infinite;}
+      .d1{animation-delay:0s;}.d2{animation-delay:.3s;}.d3{animation-delay:.6s;}.d4{animation-delay:.9s;}.d5{animation-delay:1.2s;}
+      @keyframes ping{0%,100%{opacity:.35;}50%{opacity:1;}}
+      svg{animation:boot .55s ease-out both;animation-delay:.6s;}
+      @keyframes boot{from{opacity:0;}to{opacity:1;}}
+    </style>
+  </defs>
+
+  <text class="mono cmd" x="8" y="20"><tspan class="prompt">&#10140;</tspan> ./fleet <tspan class="flag">--status</tspan> --provider oracle</text>
+
+  <g transform="translate(8,34)">
+    <rect class="panel" x="0" y="0" width="844" height="256" rx="10"/>
+
+    <g class="mono">
+      <text class="head" x="20" y="30">NODE</text>
+      <text class="head" x="190" y="30">REGION</text>
+      <text class="head" x="400" y="30">ARCH</text>
+      <text class="head" x="560" y="30">LATENCY</text>
+      <text class="head" x="700" y="30">STATUS</text>
+      <line x1="20" y1="42" x2="824" y2="42" stroke="#1b2430"/>
+
+      <text class="node" x="20" y="72">tr-ist-01</text>
+      <text class="reg"  x="190" y="72">T&#252;rkiye &#183; Istanbul</text>
+      <text class="arm"  x="400" y="72">arm64</text>
+      <text class="lat"  x="560" y="72">4ms</text>
+      <circle class="dot d1" cx="706" cy="68" r="4"/>
+      <text class="on" x="718" y="72">online</text>
+
+      <text class="node" x="20" y="102">de-fra-01</text>
+      <text class="reg"  x="190" y="102">Germany &#183; Frankfurt</text>
+      <text class="arm"  x="400" y="102">arm64</text>
+      <text class="lat"  x="560" y="102">38ms</text>
+      <circle class="dot d2" cx="706" cy="98" r="4"/>
+      <text class="on" x="718" y="102">online</text>
+
+      <text class="node" x="20" y="132">fr-par-01</text>
+      <text class="reg"  x="190" y="132">France &#183; Paris</text>
+      <text class="x64"  x="400" y="132">x86_64</text>
+      <text class="lat"  x="560" y="132">46ms</text>
+      <circle class="dot d3" cx="706" cy="128" r="4"/>
+      <text class="on" x="718" y="132">online</text>
+
+      <text class="node" x="20" y="162">jp-tyo-01</text>
+      <text class="reg"  x="190" y="162">Japan &#183; Tokyo</text>
+      <text class="x64"  x="400" y="162">x86_64</text>
+      <text class="lat"  x="560" y="162">182ms</text>
+      <circle class="dot d4" cx="706" cy="158" r="4"/>
+      <text class="on" x="718" y="162">online</text>
+
+      <text class="node" x="20" y="192">au-syd-01</text>
+      <text class="reg"  x="190" y="192">Australia &#183; Sydney</text>
+      <text class="arm"  x="400" y="192">arm64</text>
+      <text class="lat"  x="560" y="192">271ms</text>
+      <circle class="dot d5" cx="706" cy="188" r="4"/>
+      <text class="on" x="718" y="192">online</text>
+
+      <line x1="20" y1="212" x2="824" y2="212" stroke="#1b2430"/>
+      <text class="foot" x="20" y="236"># mixed-arch fleet: arm64 (ampere) + x86_64 &#183; 5 regions &#183; 3 continents &#183; oracle cloud</text>
+    </g>
+  </g>
+</svg>

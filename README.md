@@ -18,6 +18,11 @@
   <img src="assets/nmap-stack.svg" alt="nmap -sV — tech stack scan" width="860" />
 </p>
 
+<!-- ===================== FLEET ===================== -->
+<p align="center">
+  <img src="assets/fleet.svg" alt="fleet status — oracle cloud servers across 5 regions, arm64 + x86_64" width="860" />
+</p>
+
 <!-- ===================== RNG / CASINO ===================== -->
 <p align="center">
   <img src="assets/rng-slot.svg" alt="rng exploit — the house always ships" width="860" />
