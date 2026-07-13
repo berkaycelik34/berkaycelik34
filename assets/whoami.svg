@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="860" height="210" viewBox="0 0 860 210" role="img" aria-label="whoami identity and doctrine">
+  <defs>
+    <style>
+      .mono{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,"Courier New",monospace;}
+      .cmd{fill:#64748b;font-size:14px;}
+      .prompt{fill:#22c55e;}
+      .flag{fill:#22d3ee;}
+      .card{fill:#0f1620;stroke:#1b2430;stroke-width:1;}
+      .h4{fill:#64748b;font-size:10.5px;letter-spacing:2px;}
+      .k{fill:#94a3b8;font-size:13px;}
+      .v{fill:#e5e7eb;font-size:13px;}
+      .on{fill:#22c55e;font-size:13px;}
+      .dotp{animation:pulse 1.5s ease-in-out infinite;}
+      @keyframes pulse{0%,100%{opacity:.4;}50%{opacity:1;}}
+    </style>
+  </defs>
+
+  <text class="mono cmd" x="8" y="20"><tspan class="prompt">&#10140;</tspan> whoami <tspan class="flag">--verbose</tspan></text>
+
+  <!-- identity card -->
+  <g transform="translate(8,36)">
+    <rect class="card" x="0" y="0" width="410" height="158" rx="10"/>
+    <text class="mono h4" x="18" y="28">IDENTITY</text>
+    <line x1="18" y1="40" x2="392" y2="40" stroke="#1b2430"/>
+    <g class="mono" transform="translate(18,66)">
+      <text class="k" x="0" y="0">role</text><text class="v" x="110" y="0">Tech &#183; Design &#183; Strategy</text>
+      <text class="k" x="0" y="30">domain</text><text class="v" x="110" y="30">maritime &#8594; retail &#8594; digital</text>
+      <text class="k" x="0" y="60">status</text>
+      <circle class="dotp" cx="118" cy="56" r="4" fill="#22c55e"/>
+      <text class="on" x="130" y="60">shipping</text>
+    </g>
+  </g>
+
+  <!-- doctrine card -->
+  <g transform="translate(442,36)">
+    <rect class="card" x="0" y="0" width="410" height="158" rx="10"/>
+    <text class="mono h4" x="18" y="28">DOCTRINE</text>
+    <line x1="18" y1="40" x2="392" y2="40" stroke="#1b2430"/>
+    <g class="mono" transform="translate(18,66)">
+      <text class="k" x="0" y="0">rule_01</text><text class="v" x="110" y="0">reduce complexity</text>
+      <text class="k" x="0" y="30">rule_02</text><text class="v" x="110" y="30">aesthetics = performance</text>
+      <text class="k" x="0" y="60">rule_03</text><text class="v" x="110" y="60">build to sustain</text>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="860" height="180" viewBox="0 0 860 180" role="img" aria-label="principles log output">
+  <defs>
+    <style>
+      .mono{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,"Courier New",monospace;}
+      .cmd{fill:#64748b;font-size:14px;}
+      .prompt{fill:#22c55e;}
+      .flag{fill:#22d3ee;}
+      .panel{fill:#0b0f14;stroke:#1b2430;stroke-width:1;}
+      .ts{fill:#475569;font-size:12.5px;}
+      .msg{fill:#cbd5e1;font-size:12.5px;}
+      .l-ok{fill:#22c55e;font-size:10.5px;}
+      .l-inf{fill:#22d3ee;font-size:10.5px;}
+      .l-wrn{fill:#f5a524;font-size:10.5px;}
+      .caret{fill:#22c55e;animation:blink 1s steps(1) infinite;}
+      @keyframes blink{50%{opacity:0;}}
+    </style>
+  </defs>
+
+  <text class="mono cmd" x="8" y="20"><tspan class="prompt">&#10140;</tspan> tail <tspan class="flag">-f</tspan> principles.log</text>
+
+  <g transform="translate(8,34)">
+    <rect class="panel" x="0" y="0" width="844" height="140" rx="10"/>
+    <g class="mono">
+      <text class="ts" x="20" y="38">12:04:01</text>
+      <rect x="98" y="26" width="34" height="17" rx="4" fill="none" stroke="#22c55e" stroke-opacity=".35"/>
+      <text class="l-ok" x="106" y="38">OK</text>
+      <text class="msg" x="148" y="38">complexity reduced &#8212; function surfaced / karma&#351;&#305;kl&#305;k azald&#305;, i&#351;lev &#246;ne &#231;&#305;kt&#305;</text>
+
+      <text class="ts" x="20" y="76">12:04:07</text>
+      <rect x="98" y="64" width="34" height="17" rx="4" fill="none" stroke="#22d3ee" stroke-opacity=".35"/>
+      <text class="l-inf" x="105" y="76">INF</text>
+      <text class="msg" x="148" y="76">aesthetics deployed as performance / estetik bir performans arac&#305;</text>
+
+      <text class="ts" x="20" y="114">12:04:12</text>
+      <rect x="98" y="102" width="34" height="17" rx="4" fill="none" stroke="#f5a524" stroke-opacity=".35"/>
+      <text class="l-wrn" x="104" y="114">WRN</text>
+      <text class="msg" x="148" y="114">ship without sustainability &#8594; blocked / s&#252;rd&#252;r&#252;lebilir de&#287;ilse engellenir</text>
+
+      <text class="ts" x="20" y="132">&#8203;</text>
+      <rect class="caret" x="20" y="124" width="8" height="14"/>
+    </g>
+  </g>
+</svg>
