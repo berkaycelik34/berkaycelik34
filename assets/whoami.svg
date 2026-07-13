@@ -2,7 +2,7 @@
   <defs>
     <style>
       .mono{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,"Courier New",monospace;}
-      .cmd{fill:#64748b;font-size:14px;}
+      .cmd{fill:#64748b;font-size:17px;}
       .prompt{fill:#22c55e;}
       .flag{fill:#22d3ee;}
       .card{fill:#0f1620;stroke:#1b2430;stroke-width:1;}
@@ -15,6 +15,8 @@
       .bio-en{fill:#64748b;font-size:12.5px;font-style:italic;}
       .dotp{animation:pulse 1.5s ease-in-out infinite;}
       @keyframes pulse{0%,100%{opacity:.4;}50%{opacity:1;}}
+      svg{animation:boot .55s ease-out both;animation-delay:.3s;}
+      @keyframes boot{from{opacity:0;}to{opacity:1;}}
     </style>
   </defs>
 

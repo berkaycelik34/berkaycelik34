@@ -6,8 +6,8 @@
       <stop offset="1" stop-color="#f43f5e"/>
     </linearGradient>
     <linearGradient id="seven" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#fbbf24"/>
-      <stop offset="1" stop-color="#f43f5e"/>
+      <stop offset="0" stop-color="#fde047"/>
+      <stop offset="1" stop-color="#f59e0b"/>
     </linearGradient>
     <linearGradient id="gemg" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0" stop-color="#67e8f9"/>
@@ -48,12 +48,12 @@
       <text x="0" y="4.5" text-anchor="middle" font-family="ui-monospace,Menlo,Consolas,monospace" font-size="11" font-weight="800" fill="#e5e7eb" letter-spacing="1">BAR</text>
     </g>
     <g id="sym-seven" filter="url(#softglow)">
-      <text x="0" y="12" text-anchor="middle" font-family="ui-monospace,Menlo,Consolas,monospace" font-size="36" font-weight="800" fill="url(#seven)" stroke="#fecdd3" stroke-width="0.5">7</text>
+      <text x="0" y="12" text-anchor="middle" font-family="ui-monospace,Menlo,Consolas,monospace" font-size="36" font-weight="800" fill="url(#seven)" stroke="#fef3c7" stroke-width="0.5">7</text>
     </g>
 
     <style>
       .mono{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,"Courier New",monospace;}
-      .cmd{fill:#64748b;font-size:14px;}
+      .cmd{fill:#64748b;font-size:17px;}
       .prompt{fill:#22c55e;}
       .flag{fill:#22d3ee;}
       .panel{fill:#0b0f14;stroke:#243244;stroke-width:1;}
@@ -65,8 +65,9 @@
       .r2{animation:spin 1.45s linear infinite;}
       .r3{animation:spin 1.8s linear infinite;}
       @keyframes spin{0%{transform:translateY(0);}100%{transform:translateY(-300px);}}
-      .chipwrap{animation:pulse 1.6s ease-in-out infinite;}
-      @keyframes pulse{0%,100%{opacity:.45;}50%{opacity:1;}}
+      .chipwrap{opacity:.9;}
+      svg{animation:boot .55s ease-out both;animation-delay:.6s;}
+      @keyframes boot{from{opacity:0;}to{opacity:1;}}
     </style>
     <clipPath id="c1"><rect x="12" y="8" width="52" height="60" rx="8"/></clipPath>
     <clipPath id="c2"><rect x="72" y="8" width="52" height="60" rx="8"/></clipPath>

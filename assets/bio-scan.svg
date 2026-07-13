@@ -2,7 +2,7 @@
   <defs>
     <style>
       .mono{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,"Courier New",monospace;}
-      .cmd{fill:#64748b;font-size:14px;}
+      .cmd{fill:#64748b;font-size:17px;}
       .prompt{fill:#22c55e;}
       .flag{fill:#22d3ee;}
       .panel{fill:#0b0f14;stroke:#243244;stroke-width:1;}
@@ -14,20 +14,15 @@
       .bracket{stroke:#22d3ee;stroke-width:2;fill:none;}
       .scanline{animation:sweep 3.4s ease-in-out infinite;}
       @keyframes sweep{0%{transform:translateY(0);opacity:0;}8%{opacity:.85;}46%{opacity:.85;}50%{transform:translateY(176px);opacity:0;}54%{opacity:.85;}92%{opacity:.85;}100%{transform:translateY(0);opacity:0;}}
-      .gridfade{animation:gpulse 3.4s ease-in-out infinite;}
-      @keyframes gpulse{0%,100%{opacity:.14;}50%{opacity:.32;}}
-      .ring{transform-origin:139px 158px;animation:rot 9s linear infinite;}
-      @keyframes rot{to{transform:rotate(360deg);}}
-      .ring2{transform-origin:139px 158px;animation:rot2 6s linear infinite;}
-      @keyframes rot2{to{transform:rotate(-360deg);}}
+      .gridfade{opacity:.2;}
       .blinkc{animation:blink 1s steps(1) infinite;}
       @keyframes blink{50%{opacity:0;}}
       .p-fill{animation:pfill 3.4s ease-in-out infinite;}
       @keyframes pfill{0%{width:24px;}45%{width:196px;}55%{width:196px;}100%{width:24px;}}
       .matchflash{animation:mflash 3.4s ease-in-out infinite;}
       @keyframes mflash{0%,40%{opacity:.25;}50%,90%{opacity:1;}100%{opacity:.25;}}
-      .tick{animation:tickmove 1.1s steps(4) infinite;}
-      @keyframes tickmove{to{transform:translateX(-16px);}}
+      svg{animation:boot .55s ease-out both;animation-delay:.15s;}
+      @keyframes boot{from{opacity:0;}to{opacity:1;}}
     </style>
     <clipPath id="face"><rect x="51" y="70" width="176" height="176" rx="14"/></clipPath>
     <linearGradient id="beam" x1="0" y1="0" x2="0" y2="1">

@@ -2,7 +2,7 @@
   <defs>
     <style>
       .mono{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,"Courier New",monospace;}
-      .cmd{fill:#64748b;font-size:14px;}
+      .cmd{fill:#64748b;font-size:17px;}
       .prompt{fill:#22c55e;}
       .flag{fill:#22d3ee;}
       .panel{fill:#0b0f14;stroke:#1b2430;stroke-width:1;}
@@ -13,6 +13,8 @@
       .l-wrn{fill:#f5a524;font-size:10.5px;}
       .caret{fill:#22c55e;animation:blink 1s steps(1) infinite;}
       @keyframes blink{50%{opacity:0;}}
+      svg{animation:boot .55s ease-out both;animation-delay:.75s;}
+      @keyframes boot{from{opacity:0;}to{opacity:1;}}
     </style>
   </defs>
 

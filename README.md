@@ -34,10 +34,3 @@
     <img src="assets/statusbar.svg" alt="status bar — celikberkay.com · infogit@celikberkay.com" width="860" />
   </a>
 </p>
-
-<!-- ===================== STATS ===================== -->
-<p align="center">
-  <img src="https://komarev.com/ghpvc/?username=berkaycelik34&label=VIEWS&style=flat&color=0f1620&labelColor=05070a" alt="Views" />
-  <img src="https://img.shields.io/github/stars/berkaycelik34/berkaycelik34?label=STARS&style=flat&color=0f1620&labelColor=05070a" alt="Stars" />
-  <img src="https://img.shields.io/github/followers/berkaycelik34?label=FOLLOWERS&style=flat&color=0f1620&labelColor=05070a" alt="Followers" />
-</p>

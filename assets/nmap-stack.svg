@@ -2,7 +2,7 @@
   <defs>
     <style>
       .mono{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,"Courier New",monospace;}
-      .cmd{fill:#64748b;font-size:14px;}
+      .cmd{fill:#64748b;font-size:17px;}
       .prompt{fill:#22c55e;}
       .flag{fill:#22d3ee;}
       .panel{fill:#0b0f14;stroke:#1b2430;stroke-width:1;}
@@ -13,6 +13,8 @@
       .muted{fill:#64748b;font-size:13px;}
       .scanline{stroke:#22c55e;stroke-width:1;opacity:0;animation:sweep 3s ease-in-out infinite;}
       @keyframes sweep{0%{opacity:0;transform:translateY(0);}10%{opacity:.5;}90%{opacity:.5;}100%{opacity:0;transform:translateY(120px);}}
+      svg{animation:boot .55s ease-out both;animation-delay:.45s;}
+      @keyframes boot{from{opacity:0;}to{opacity:1;}}
     </style>
   </defs>
 
