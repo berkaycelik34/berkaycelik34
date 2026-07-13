@@ -13,13 +13,6 @@
   <img src="assets/whoami.svg" alt="whoami — identity and doctrine" width="860" />
 </p>
 
-<p align="center">
-  <sub>
-    Teknoloji, tasarım ve stratejiyi tek bir üretim disiplininde birleştiririm — denizcilik otomasyonundan kurumsal perakendeye.<br/>
-    A versatile professional blending technology, design, and strategy — from maritime automation to corporate retail.
-  </sub>
-</p>
-
 <!-- ===================== STACK SCAN ===================== -->
 <p align="center">
   <img src="assets/nmap-stack.svg" alt="nmap -sV — tech stack scan" width="860" />

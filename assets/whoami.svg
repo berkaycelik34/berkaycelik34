@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="860" height="210" viewBox="0 0 860 210" role="img" aria-label="whoami identity and doctrine">
+<svg xmlns="http://www.w3.org/2000/svg" width="860" height="290" viewBox="0 0 860 290" role="img" aria-label="whoami identity and doctrine">
   <defs>
     <style>
       .mono{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,"Courier New",monospace;}
@@ -10,6 +10,9 @@
       .k{fill:#94a3b8;font-size:13px;}
       .v{fill:#e5e7eb;font-size:13px;}
       .on{fill:#22c55e;font-size:13px;}
+      .bio-c{fill:#334155;font-size:12.5px;}
+      .bio-tr{fill:#94a3b8;font-size:12.5px;}
+      .bio-en{fill:#64748b;font-size:12.5px;font-style:italic;}
       .dotp{animation:pulse 1.5s ease-in-out infinite;}
       @keyframes pulse{0%,100%{opacity:.4;}50%{opacity:1;}}
     </style>
@@ -40,6 +43,17 @@
       <text class="k" x="0" y="0">rule_01</text><text class="v" x="110" y="0">reduce complexity</text>
       <text class="k" x="0" y="30">rule_02</text><text class="v" x="110" y="30">aesthetics = performance</text>
       <text class="k" x="0" y="60">rule_03</text><text class="v" x="110" y="60">build to sustain</text>
+    </g>
+  </g>
+
+  <!-- bio output -->
+  <g transform="translate(8,210)">
+    <rect class="card" x="0" y="0" width="844" height="66" rx="10"/>
+    <g class="mono" transform="translate(18,27)">
+      <text class="bio-c" x="0" y="0"># </text>
+      <text class="bio-tr" x="16" y="0">Teknoloji, tasar&#305;m ve stratejiyi tek bir &#252;retim disiplininde birle&#351;tiririm &#8212; denizcilikten kurumsal perakendeye.</text>
+      <text class="bio-c" x="0" y="24"># </text>
+      <text class="bio-en" x="16" y="24">Blending technology, design and strategy into one discipline &#8212; from maritime automation to corporate retail.</text>
     </g>
   </g>
 </svg>
