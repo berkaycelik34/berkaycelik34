@@ -5,7 +5,7 @@
       .cmd{fill:#64748b;font-size:17px;}
       .prompt{fill:#22c55e;}
       .flag{fill:#22d3ee;}
-      .panel{fill:#0b0f14;stroke:#243244;stroke-width:1;}
+      .panel{fill:#161b22;}
       .k{fill:#475569;font-size:12.5px;}
       .v{fill:#e5e7eb;font-size:12.5px;}
       .ok{fill:#22c55e;font-size:12.5px;}
@@ -31,6 +31,8 @@
       <stop offset="1" stop-color="#22c55e" stop-opacity=".85"/>
     </linearGradient>
   </defs>
+
+  <rect x="4" y="4" width="852" height="282" rx="12" fill="#0d1117"/>
 
   <text class="mono cmd" x="8" y="20"><tspan class="prompt">&#10140;</tspan> ./scan <tspan class="flag">--biometric</tspan> avatar.png</text>
 

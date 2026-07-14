@@ -5,7 +5,7 @@
       .cmd{fill:#64748b;font-size:17px;}
       .prompt{fill:#22c55e;}
       .flag{fill:#22d3ee;}
-      .card{fill:#0f1620;stroke:#1b2430;stroke-width:1;}
+      .card{fill:#161b22;}
       .h4{fill:#64748b;font-size:10.5px;letter-spacing:2px;}
       .k{fill:#94a3b8;font-size:13px;}
       .v{fill:#e5e7eb;font-size:13px;}
@@ -19,6 +19,8 @@
       @keyframes boot{from{opacity:0;}to{opacity:1;}}
     </style>
   </defs>
+
+  <rect x="4" y="4" width="852" height="282" rx="12" fill="#0d1117"/>
 
   <text class="mono cmd" x="8" y="20"><tspan class="prompt">&#10140;</tspan> whoami <tspan class="flag">--verbose</tspan></text>
 

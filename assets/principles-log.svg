@@ -5,7 +5,7 @@
       .cmd{fill:#64748b;font-size:17px;}
       .prompt{fill:#22c55e;}
       .flag{fill:#22d3ee;}
-      .panel{fill:#0b0f14;stroke:#1b2430;stroke-width:1;}
+      .panel{fill:#161b22;}
       .ts{fill:#475569;font-size:12.5px;}
       .msg{fill:#cbd5e1;font-size:12.5px;}
       .l-ok{fill:#22c55e;font-size:10.5px;}
@@ -17,6 +17,8 @@
       @keyframes boot{from{opacity:0;}to{opacity:1;}}
     </style>
   </defs>
+
+  <rect x="4" y="4" width="852" height="172" rx="12" fill="#0d1117"/>
 
   <text class="mono cmd" x="8" y="20"><tspan class="prompt">&#10140;</tspan> tail <tspan class="flag">-f</tspan> principles.log</text>
 

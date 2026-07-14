@@ -56,7 +56,7 @@
       .cmd{fill:#64748b;font-size:17px;}
       .prompt{fill:#22c55e;}
       .flag{fill:#22d3ee;}
-      .panel{fill:#0b0f14;stroke:#243244;stroke-width:1;}
+      .panel{fill:#161b22;}
       .reelbox{fill:#070b10;stroke:#243244;stroke-width:1;}
       .t{fill:#e5e7eb;font-size:15px;}
       .s{fill:#64748b;font-size:12px;}
@@ -79,6 +79,8 @@
       <stop offset="1" stop-color="#000" stop-opacity=".55"/>
     </linearGradient>
   </defs>
+
+  <rect x="4" y="4" width="852" height="162" rx="12" fill="#0d1117"/>
 
   <text class="mono cmd" x="8" y="20"><tspan class="prompt">&#10140;</tspan> ./rng <tspan class="flag">--exploit</tspan> house-edge</text>
 

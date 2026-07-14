@@ -11,7 +11,7 @@
     </linearGradient>
     <style>
       .mono{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,"Courier New",monospace;}
-      .bg{fill:#0b0f14;stroke:#243244;stroke-width:1;}
+      .bg{fill:#161b22;}
       .path{fill:#94a3b8;font-size:12px;letter-spacing:.5px;}
       .cmd{fill:#64748b;font-size:15px;}
       .prompt{fill:#22c55e;}

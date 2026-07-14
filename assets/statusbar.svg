@@ -2,7 +2,7 @@
   <defs>
     <style>
       .mono{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,"Courier New",monospace;}
-      .bar{fill:#0b0f14;stroke:#243244;stroke-width:1;}
+      .bar{fill:#161b22;}
       .git{fill:#22c55e;font-size:13px;}
       .item{fill:#94a3b8;font-size:13px;}
       .end{fill:#a855f7;font-size:13px;}
